@@ -1,0 +1,15 @@
+public class Doubles{
+    public static void main(String [] args){
+            int counter, number;
+                do{
+                    System.out.println("Give amount of loops:");
+                    counter= UserInputReader.readInt();
+                }while(counter<=0);
+            while(counter>0){ 
+                System.out.print("Give some number:");
+                number=UserInputReader.readInt();
+                System.out.println("Two Times "+ number + "is" + 2*number);
+                counter = counter - 1;
+            }
+        }
+}

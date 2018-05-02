@@ -1,0 +1,23 @@
+public class Fibonacci {
+	public static void main (String [] args){
+		int last_fib, fib, temp, number, i;
+		last_fib = 1;
+		fib =1;
+		System.out.print("How many Fibonacci numbers do you want : ");
+		number = UserInputReader.readInt();
+		number = Math.abs(number);
+		if(number <= 2){
+			System.out.println("Both the first and the second numbers are 1.");
+		} else{
+			System.out.println("1. Number is 1");
+			System.out.println("2. Number is 1");
+			for(i=3; i<=number; i++){
+				temp = last_fib;
+				last_fib = fib;
+				fib = fib + temp;
+				System.out.println(i + " .number is " + fib);
+			}
+		}
+	}
+
+}

@@ -1,0 +1,15 @@
+public class Sum{
+	public static void main(String [] args){
+		int number, sum;
+		System.out.println("Enter the first number: ");
+		number= UserInputReader.readInt();
+		sum = number;
+		System.out.println("Enter the second number: ");
+		number = UserInputReader.readInt();
+		sum = sum + number; 
+		System.out.println("Enter the third number: ");
+		number= UserInputReader.readInt();
+		sum = sum + number;
+		System.out.println("Sum of the numbers is " + sum);
+	}
+}
